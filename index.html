@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Seat Booking</h1>
+        
+        <!-- Movie Selection -->
+        <div class="movie-selection">
+            <label for="movie-select">Select a Movie:</label>
+            <select id="movie-select">
+                <option value="">Choose a movie</option>
+                <option value="avengers" data-price="15">Avengers: Endgame - $15</option>
+                <option value="joker" data-price="12">Joker - $12</option>
+                <option value="inception" data-price="18">Inception - $18</option>
+                <option value="titanic" data-price="10">Titanic - $10</option>
+            </select>
+        </div>
+
+        <!-- Movie Info -->
+        <div class="movie-info" id="movie-info" style="display: none;">
+            <div class="movie-details">
+                <h3 id="movie-title"></h3>
+                <p><strong>Price:</strong> $<span id="movie-price"></span> per seat</p>
+                <p><strong>Timing:</strong> <span id="movie-timing"></span></p>
+                <p><strong>Venue:</strong> <span id="movie-venue"></span></p>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend" id="legend" style="display: none;">
+            <div class="legend-item">
+                <div class="seat available"></div>
+                <span>Available</span>
+            </div>
+            <div class="legend-item">
+                <div class="seat selected"></div>
+                <span>Selected</span>
+            </div>
+            <div class="legend-item">
+                <div class="seat occupied"></div>
+                <span>Occupied</span>
+            </div>
+        </div>
+
+        <!-- Screen -->
+        <div class="screen-container" id="screen-container" style="display: none;">
+            <div class="screen">SCREEN</div>
+        </div>
+
+        <!-- Seating Area -->
+        <div class="seating-area" id="seating-area">
+            <!-- Seats will be dynamically generated -->
+        </div>
+
+        <!-- Booking Summary -->
+        <div class="booking-summary" id="booking-summary" style="display: none;">
+            <p>Selected Seats: <span id="selected-seats-count">0</span></p>
+            <p>Total Price: $<span id="total-price">0</span></p>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls" id="controls" style="display: none;">
+            <button id="reset-btn" class="btn btn-secondary">Reset Selection</button>
+            <button id="submit-btn" class="btn btn-primary">Book Seats</button>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Booking Confirmed!</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="booking-details">
+                    <h3>Booking Details</h3>
+                    <p><strong>Movie:</strong> <span id="modal-movie"></span></p>
+                    <p><strong>Seats:</strong> <span id="modal-seats"></span></p>
+                    <p><strong>Total Price:</strong> $<span id="modal-price"></span></p>
+                    <p><strong>Timing:</strong> <span id="modal-timing"></span></p>
+                    <p><strong>Venue:</strong> <span id="modal-venue"></span></p>
+                    <p><strong>Booking ID:</strong> <span id="modal-booking-id"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
