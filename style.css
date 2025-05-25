@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #242333;
     min-height: 100vh;
     padding: 20px;
 }
@@ -25,13 +25,13 @@ h1 {
     color: #333;
     margin-bottom: 30px;
     font-size: 2.5rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: #242333;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-/* Movie Selection */
+
 .movie-selection {
     margin-bottom: 25px;
 }
@@ -60,27 +60,7 @@ h1 {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* Movie Info */
-.movie-info {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    border-left: 4px solid #667eea;
-}
 
-.movie-details h3 {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-}
-
-.movie-details p {
-    margin-bottom: 8px;
-    color: #666;
-}
-
-/* Legend */
 .legend {
     display: flex;
     justify-content: center;
@@ -99,7 +79,7 @@ h1 {
     color: #666;
 }
 
-/* Screen */
+
 .screen-container {
     text-align: center;
     margin-bottom: 30px;
@@ -116,7 +96,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Seating Area */
+
 .seating-area {
     display: grid;
     gap: 8px;
@@ -142,7 +122,7 @@ h1 {
     margin-right: 10px;
 }
 
-/* Seats */
+
 .seat {
     width: 35px;
     height: 35px;
@@ -191,7 +171,7 @@ h1 {
     transform: none;
 }
 
-/* Booking Summary */
+
 .booking-summary {
     background: #e3f2fd;
     padding: 20px;
@@ -212,7 +192,7 @@ h1 {
     color: #2196F3;
 }
 
-/* Controls */
+
 .controls {
     display: flex;
     gap: 15px;
@@ -232,13 +212,13 @@ h1 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: navy;
     color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: grey;
 }
 
 .btn-secondary {
@@ -258,8 +238,8 @@ h1 {
     transform: none;
 }
 
-/* Modal */
-.modal-overlay {
+
+.modal-success {
     position: fixed;
     top: 0;
     left: 0;
@@ -272,7 +252,7 @@ h1 {
     z-index: 1000;
 }
 
-.modal-overlay.show {
+.modal-success.show {
     display: flex;
 }
 
@@ -304,7 +284,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: navy;
     color: white;
     border-radius: 15px 15px 0 0;
 }
@@ -369,7 +349,7 @@ h1 {
     text-align: center;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .container {
         padding: 20px;
