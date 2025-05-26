@@ -122,7 +122,7 @@ function generateSeats() {
         
         const rowLabel = document.createElement('div');
         rowLabel.className = 'row-label';
-        rowLabel.textContent = String.fromCharCode(65 + row); // A, B, C, etc.
+        rowLabel.textContent = String.fromCharCode(65 + row); 
         seatRow.appendChild(rowLabel);
         
         for (let seat = 1; seat <= movie.seatsPerRow; seat++) {
